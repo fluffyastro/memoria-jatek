@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #292b2f;
+  }
+  
+  .container {
+    text-align: center;
+    background-color: #3b3a3c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: rgb(173, 162, 182);
+  }
+  
+  #game {
+    margin-top: 20px;
+  }
+  
+  #numberDisplay {
+    font-size: 2rem;
+    margin: 10px 0;
+  }
+  
+  #inputSection {
+    margin: 20px 0;
+  }
+  
+  #userInput {
+    padding: 10px;
+    font-size: 1rem;
+    margin-right: 10px;
+    width: 150px;
+    border-radius: 15px;
+    color: black;
+    background-color: #5f5f5f;
+    border-color: #292b2f;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  #result {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #006400;
+  }
+  select {
+    color: black;
+    background-color: #5f5f5f;
+    border-color: #292b2f;
+    border-radius: 15px;
+  }
