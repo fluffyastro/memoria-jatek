@@ -7,22 +7,24 @@
 </head>
 <body>
     <?php
-        $server = "10.0.0.50";
-        $username = "test";
-        $password = "test";
-        $dbname = "school";
+        $server = "localhost";
+        $username = "root";
+        $password = "";
+        $dbname = "";
 
         $conn = new mysqli($server, $username, $password, $dbname);
 
         if($conn->connect_error) {
-            die("Connection failed:" .$conn->connect_error);
+            die("Connection failed:" . $conn->connect_error);
         }
-
-        $name = $_POST['name'];
-        $score = $_POST['score'];
-        $sql_create = "CREATE DATABASE IF NOT EXISTS game_data (
         
-        )";
+        
+        $name = $_POST['name'];
+        $score = $_POST['score']; 
+        
+        
+        $sql_create = "CREATE DATABASE IF NOT EXISTS game_data";
+        $sql_xd = "USE game_data";
         $sql_table = "CREATE TABLE IF NOT EXISTS scores (
             id INT AUTO_INCREMENT PRIMARY KEY,
             name VARCHAR(255),
@@ -30,6 +32,7 @@
         )";
 
         $conn->query($sql_create);
+        $conn->query($sql_xd);
         $conn->query($sql_table); 
     ?>
   <div class="container">
